@@ -1,3 +1,19 @@
-export default function ShoppingListItemForm() {
-  return <></>;
+export default function ShoppingListItemForm({
+  body,
+  onBodyChanged,
+  onSubmit
+}) {
+  return (
+    <>
+      <form onSubmit={(e) => {
+        e.preventDefault();
+        onSubmit(body);
+      }}>
+        <textarea value={body} onChange={(e) => {
+          onBodyChanged(e.target.value);
+        }}/>
+        <button type="submit">submit</button>
+      </form>;
+    </>
+  );
 }
