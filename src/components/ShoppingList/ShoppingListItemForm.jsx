@@ -12,7 +12,7 @@ export default function ShoppingListItemForm({
         <textarea value={body} onChange={(e) => {
           onBodyChanged(e.target.value);
         }}/>
-        <button type="submit">submit</button>
+        <button type="submit" data-testid={'submit-button'}>submit</button>
       </form>;
     </>
   );
