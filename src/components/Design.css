@@ -1,0 +1,21 @@
+
+textarea {
+  resize: none;
+  padding: var(--padding-half);
+  margin: var(--padding-half);
+  margin: var(--padding-half);
+  /* Text areas are special with width. Just subtract the extra padding. */
+  width: calc(100% - var(--padding));
+  box-sizing: border-box;
+}
+
+form button {
+  display: block;
+  background-color: var(--button-color);
+  border-radius: 2px;
+  color: var(--white-color);
+  padding: var(--padding-half);
+  margin: var(--padding-half);
+  width: 100%;
+  text: capitalize;
+}

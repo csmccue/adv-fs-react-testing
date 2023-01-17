@@ -1,0 +1,22 @@
+.Dashboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+
+  form {
+    padding: 20px;
+    width: 400px;
+    background: var(--light-accent-color);
+    box-shadow: var(--box-shadow);
+
+    display: grid;
+    gap: 10px;
+  }
+
+  pre {
+    font-family: monospace;
+    line-height: 1.3;
+    background: white;
+    padding: 5px;
+  }
+}

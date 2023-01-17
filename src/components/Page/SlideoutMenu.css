@@ -1,0 +1,45 @@
+.SlideoutMenu {
+  position: relative;
+  height: var(--header-height);
+  width: var(--header-height);
+
+  cursor: pointer;
+  user-select: none;
+
+  border: 0;
+  &:focus {
+    outline: 0;
+  }
+
+  background: var(--offset-color);
+
+  &::before {
+    position: relative;
+    top: -1px;
+    content: '☰';
+    font-size: 1.8em;
+  }
+
+  &.Open {
+    &::before {
+      content: '✕';
+      top: 2px;
+      font-size: 1.3em;
+    }
+
+    .MenuContainer {
+      transform: translateX(0);
+    }
+  }
+
+  .MenuContainer {
+    position: absolute;
+    width: max-content;
+    top: 100%;
+    height: calc(100vh - var(--header-height));
+    padding: 20px 50px 0 20px;
+    background: var(--color-4);
+    transform: translateX(-100%);
+    transition: transform 200ms ease-in;
+  }
+}

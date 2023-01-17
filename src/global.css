@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-font: 'Poppins', 'Segoe UI', Candara,
+    'Bitstream Vera Sans', 'DejaVu Sans', 'Bitstream Vera Sans',
+    'Trebuchet MS', Verdana, 'Verdana Ref', sans-serif;
+  --label-font: 'Bebas Neue', Impact, Haettenschweiler,
+    'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat',
+    'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;
+
+  --header-color: #00a8c6;
+  --button-color: #89dfe7;
+  --border-color: rgb(65, 99, 112);
+  --subheader-color: #40c0cb;
+  --comment-border: #00a8c6;
+  --offset-color: #d3dcbd;
+  --color-4: #b9d660;
+  --comment-background-color: #d6b960;
+  --tag-color: #e4fdff;
+  --light-accent-color: #e5f1bf;
+  --background-color: #f9f2e7;
+  --black-color: rgb(27, 42, 48);
+  --caption-color: rgb(65, 99, 112);
+  --white-color: white;
+
+  --padding: 20px;
+  --padding-half: calc(var(--padding) / 2);
+  @media (min-width: 700px) {
+    --padding: 40px;
+  }
+
+  --header-height: 35px;
+  @media (min-width: 700px) {
+    --header-height: 50px;
+  }
+  --main-content-width: 700px;
+}
+
+body {
+  font-family: var(--primary-font);
+  background: var(--background-color);
+  color: var(--black-color);
+}
+
+:global(.label-text) {
+  font-family: var(--label-font);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
