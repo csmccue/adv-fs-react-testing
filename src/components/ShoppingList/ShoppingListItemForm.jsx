@@ -9,7 +9,7 @@ export default function ShoppingListItemForm({
         e.preventDefault();
         onSubmit(body);
       }}>
-        <textarea value={body} onChange={(e) => {
+        <textarea value={body} data-testid={'x'}onChange={(e) => {
           onBodyChanged(e.target.value);
         }}/>
         <button type="submit" data-testid={'submit-button'}>submit</button>
