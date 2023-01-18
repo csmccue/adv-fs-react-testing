@@ -1,6 +1,5 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import ShoppingListItemForm from './ShoppingListItemForm';
-import ShoppingLists from './ShoppingLists';
 
 describe ('ShoppingListItemForm', () => {
 
@@ -24,15 +23,6 @@ describe ('ShoppingListItemForm', () => {
     fireEvent.change(textarea, { target: { value: 'eggs' } });
     expect(textarea.value).toBe('eggs');
   });
-
-  // // test 3 - users can see database data
-  // it('user can see database', () => {
-  //   render(
-  //     <ShoppingLists />
-  //   );
-
-  // });
-
 
 }
 
